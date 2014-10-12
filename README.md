@@ -43,3 +43,8 @@ So in your css styles you could do something like:
 ```
 
 Another idea is to apply css-transitions for opacity animation on different zoom levels
+
+Compatibility
+=============
+
+Tested on Leaflet 0.7.3
