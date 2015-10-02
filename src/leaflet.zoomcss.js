@@ -23,13 +23,10 @@ L.Map.ZoomCSS = L.Handler.extend({
   _zoomCSS: function (e) {
 
     var map = this._map,
-        zoom = map.getZoom();
+        zoom = map.getZoom(),
+        container = map.getContainer();
 
-      var container = map.getContainer();
-
-      $(container).removeClass (function (index, css) {
-        return (css.match (/z[0-9]{1,2}/g) || []).join(' ');
-      }).addClass('z' + zoom);
+    container.className = container.className.replace( /z[0-9]{1,2}/g, '' ) + ' z' + zoom;
 
   }
 
