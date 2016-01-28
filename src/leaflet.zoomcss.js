@@ -13,6 +13,7 @@ L.Map.mergeOptions({
 
 L.Map.ZoomCSS = L.Handler.extend({
   addHooks: function () {
+    this._zoomCSS();
     this._map.on('zoomend', this._zoomCSS, this);
   },
 
