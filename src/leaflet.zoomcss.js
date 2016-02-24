@@ -27,7 +27,7 @@ L.Map.ZoomCSS = L.Handler.extend({
         zoom = map.getZoom(),
         container = map.getContainer();
 
-    container.className = container.className.replace( /z[0-9]{1,2}/g, '' ) + ' z' + zoom;
+    container.className = container.className.replace( /\sz[0-9]{1,2}/g, '' ) + ' z' + zoom;
 
   }
 
