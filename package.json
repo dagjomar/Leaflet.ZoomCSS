@@ -1,0 +1,16 @@
+{
+  "name": "Leaflet-zoomCSS",
+  "version": "0.0.1",
+  "description": "Add zoom level css class to map element for easy style updates based on zoom levels",
+  "main": "src/leaflet.zoomcss.js",
+  "module": "dist/leaflet.zoomcss.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dagjomar/Leaflet.ZoomCSS.git"
+  },
+  "author": "Dag Jomar Mersland",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dagjomar/Leaflet.ZoomCSS/issues"
+  }
+}
