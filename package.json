@@ -1,5 +1,5 @@
 {
-  "name": "Leaflet-zoomCSS",
+  "name": "leaflet-zoomcss",
   "version": "0.0.1",
   "description": "Add zoom level css class to map element for easy style updates based on zoom levels",
   "main": "src/leaflet.zoomcss.js",
