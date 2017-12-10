@@ -25,7 +25,7 @@ L.Map.ZoomCSS = L.Handler.extend({
 
     var map = this._map,
         diff = parseFloat(map.getZoom()) - Math.floor(parseFloat(map.getZoom())),
-        zoom = diff =< 0.5 ? Math.floor(map.getZoom()) : Math.ceil(map.getZoom()),
+        zoom = diff <= 0.5 ? Math.floor(map.getZoom()) : Math.ceil(map.getZoom()),
         container = map.getContainer();
 
     container.className = container.className.replace( /\sz[0-9]{1,2}/g, '' ) + ' z' + zoom;
