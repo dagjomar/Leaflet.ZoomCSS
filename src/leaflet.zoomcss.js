@@ -22,13 +22,18 @@ L.Map.ZoomCSS = L.Handler.extend({
   },
 
   _zoomCSS: function (e) {
+    const zoomCssPrefix = 'z';
 
     var map = this._map,
-        zoom = map.getZoom(),
-        container = map.getContainer();
+      zoom = map.getZoom(),
+      container = map.getContainer();
 
-    container.className = container.className.replace( /\sz[0-9]{1,2}/g, '' ) + ' z' + zoom;
-
+    for ( let i = 0; i < 24; i++ ) {
+      container.classList.remove(zoomCssPrefix + String(i));
+    }
+    if (zoom) {
+        container.classList.add(zoomCssPrefix + String(zoom));
+    }
   }
 
 

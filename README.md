@@ -47,4 +47,4 @@ Another idea is to apply css-transitions for opacity animation on different zoom
 Compatibility
 =============
 
-Tested on Leaflet 0.7.3
+Tested on Leaflet 1.2.0
